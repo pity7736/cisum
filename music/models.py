@@ -1,9 +1,9 @@
 from django.db import models
 
 
-class SlugModel(models):
+class SlugModel(models.Model):
     name = models.CharField(max_length=100)
-    name_slug = models.SlugField(max_lenth=100)
+    name_slug = models.SlugField(max_length=100)
 
     class Meta:
         abstract = True
