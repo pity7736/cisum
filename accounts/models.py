@@ -11,7 +11,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     date_joined = models.DateTimeField(auto_now_add=True)
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['email']
 
     def __str__(self):
         if self.first_name and self.last_name:
