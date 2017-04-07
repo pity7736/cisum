@@ -4,7 +4,7 @@ from accounts.models import User
 
 
 class UserFactory(factory.django.DjangoModelFactory):
-    email = factory.Faker('email')
+    email = 'pity7736@gmail.com'
     first_name = factory.Faker('first_name')
     last_name = factory.Faker('last_name')
 
